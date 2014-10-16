@@ -94,7 +94,7 @@ void init() {
 
     kernel->streams->printf("Smoothie Running @%ldMHz\r\n", SystemCoreClock / 1000000);
     Version version;
-    kernel->streams->printf("  Build version %s, Build date %s\r\n", version.get_build(), version.get_build_date());
+    kernel->streams->printf("  Neva Build version %s, Build date %s\r\n", version.get_build(), version.get_build_date());
 
     //some boards don't have leds.. TOO BAD!
     kernel->use_leds= !kernel->config->value( disable_leds_checksum )->by_default(false)->as_bool();
